@@ -1,0 +1,36 @@
+{
+  "name": "@mykeels/symlinks",
+  "version": "0.0.1",
+  "description": "Symlinks for Monorepos",
+  "bin": "dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsup src/index.ts --dts",
+    "ts": "tsc"
+  },
+  "keywords": [
+    "symlinks",
+    "monorepos",
+    "wormholes",
+    "files",
+    "sharing"
+  ],
+  "author": "Mykeels",
+  "license": "Private",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "yaml": "^2.3.4",
+    "zod": "^3.22.4"
+  }
+}
